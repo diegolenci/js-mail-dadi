@@ -6,31 +6,24 @@ stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo
 Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).
 Si può fare? Certo che si basta ragionare un po’.
 Nota:
-Non è necessario provvedere alla validazione delle email
+Non è necessario provvedere alla validazione delle email */
+
+//elenco mail e richiesta a utente
+const email = [
+    "paperinogmail.com",
+    "pippogmail.com",
+    "topolinogmail.com"
+]
+let richiesta = prompt ("inserisci la tua mail")
+console.log ( email )
 
 
-Gioco dei dadi
+
+
+/*Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.*/
 
-//ESERCIZIO 1
-//elenco mail
-/*const email = [
-    paperinogmail.com,
-    pippogmail.com,
-    mariorossigmail.com,
-    topolinogmail.com
-]
-
-//richiesta mail a utente
-
-let richiesta = prompt ("inserisci la tua mail")*/
-
-
-
-
-
-//ESERCIZIO 2
 //variabili con numeri random
 let number1 = Math.floor(Math.random() * 6)
 let number2 = Math.floor(Math.random() * 6)
