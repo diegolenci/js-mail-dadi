@@ -14,9 +14,23 @@ const email = [
     "pippogmail.com",
     "topolinogmail.com"
 ]
-let richiesta = prompt ("inserisci la tua mail")
-console.log ( email )
 
+let richiesta = prompt ("inserisci la tua mail")
+let emailTrovata = false
+
+for (let i=0; i < email.length; i++ ){
+    let singoloElemento = email[i];
+
+    if( singoloElemento === richiesta){
+        emailTrovata = true
+    }
+}
+
+if ( emailTrovata === true){
+    console.log(`${richiesta} puoi accedere`)
+} else {
+    console.log("peccato non sei in lista")
+}
 
 
 
